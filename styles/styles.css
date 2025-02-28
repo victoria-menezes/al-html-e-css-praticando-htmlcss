@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    text-decoration: 0;
+    color:inherit;
+    list-style-type: none;
+}
+
+:root{
+    --primary-color: #00030C;
+    --secondary-color:#fff;
+    --tertiary-color:#c0c0c0;
+    --primary-accent-color:#127bf7;
+    --secondary-accent-color: #59b4ff;
+
+    --primary-font: 'Inter', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+
+    font-family: var(--primary-font);
+    font-weight:400;
+    font-size:16px;
+}
+
+.container{
+    box-sizing: border-box;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal{
+    background-image: url("/assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    align-items: center;
+    text-align: center;
+}
+
+.principal__conteudo{
+    margin:0 6em;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size:20px;
+}
+
+.principal__conteudo__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.principal__conteudo__links{
+    display:flex;
+    flex-direction: column;
+}
+
+.link{
+    box-sizing: border-box;
+    background-color: #127bf7;
+    border-radius: 8px;
+    padding:16px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.link:hover{
+    background-color: var(--secondary-accent-color);
+    color:var(--primary-color)
+}
+
+.link__secundario{
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+.link__secundario:hover{
+    background-color: transparent;
+    color:var(--tertiary-color)
+}
+
+.aviso{
+    font-size:12px;
+    color:var(--tertiary-color)
+}
+
+.container__imagem{
+    box-sizing: border-box;
+    width:auto;
+    
+    max-height: 80%;
+    margin:auto;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario .titulo, .alternativo .titulo{
+    color:var(--secondary-color);
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.container__descricao{
+    color:#c0c0c0;
+    padding:2em;
+}
+
+.secundario .link{
+    color:var(--secondary-color);
+    display: inline-block;
+    box-sizing: border-box;
+    margin:0;
+    margin-top:1em;
+}
+
+.container.alternativo{
+    display: block;
+    text-align: center;
+}
+
+.alternativo .titulo{
+    margin-bottom:0.6em;
+}
+
+.container__dispositivos__dispositivo__texto{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.container__dispositivos{
+    display: flex;
+    justify-content: center;
+    gap: 2.5%;
+}
+
+.footer{
+    box-sizing: border-box;
+    padding:20px;
+}
+
+
+.footer *{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.footer__imagem{
+    display:block;
+    margin: 0 auto 10px auto;
+}
+
+.footer__lista{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.footer__lista__item a:hover{
+    color:var(--primary-accent-color);
+}
+
+.footer__copyright, .footer__aviso{
+    color:var(--tertiary-color);
+}
